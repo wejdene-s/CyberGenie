@@ -144,6 +144,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'api.CustomUser' 
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
+
+# Media files settings
+MEDIA_URL = '/media/'  # The URL that will serve the media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # The directory on the filesystem to store uploaded files
